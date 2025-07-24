@@ -1,0 +1,246 @@
+/* google font links */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+.font-noto {
+  font-family: "Noto Serif", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+/* common css start  */
+
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f8ff;
+  font-family: "Inter", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-centre {
+  align-items: center;
+}
+
+.item-end {
+  align-items: end;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.full-container {
+  margin: 0 auto;
+}
+
+section {
+  margin: 120px 0;
+}
+
+header {
+  margin: 60px 0;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-black-haf {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.text-dark {
+  color: #111111;
+}
+
+.text-dark-blue {
+  color: #252432;
+}
+
+.text-light-blue {
+  color: #8987a1;
+}
+
+.text-color {
+  color: #e95a08;
+}
+
+.common-tittle {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.common-tittle-heading {
+  font-size: 3.125rem;
+  font-weight: 600;
+}
+.common-tittle-sub {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  max-width: 888px;
+  margin: 0 auto;
+}
+
+/* --- */
+
+/* nav css  */
+.nav-parents {
+  padding: 30px 0;
+}
+
+.nav-item {
+  list-style: none;
+  margin-left: 46px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* banner section css */
+
+.banner-section img {
+  width: 100%;
+}
+
+.banner-left {
+  max-width: 600px;
+}
+
+.banner-tittle {
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.banner-sub {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+/* plant-card section css */
+.plant-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-tittle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.card-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 20px 0 30px;
+}
+.card-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  width: 100%;
+  background: #e95a08;
+  border: none;
+  padding: 26px;
+}
+
+/* responsive css */
+/* medium device */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  header {
+    padding: 0 40px;
+  }
+  section {
+    padding: 0 40px;
+  }
+
+  .banner-left {
+    max-width: 300px;
+  }
+  .banner-tittle {
+    font-size: 2.5rem;
+  }
+}
+
+/* medium device */
+
+@media screen and (max-width: 576px) {
+  /* nav css */
+
+  header {
+    padding: 0 20px;
+  }
+
+  section {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+
+  .common-tittle-heading {
+    font-size: 1.5rem;
+  }
+  .common-tittle-sub {
+    font-size: 0.9rem;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .banner-section {
+    flex-direction: column-reverse;
+  }
+  .banner-tittle {
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+
+  .banner-sub {
+    font-size: 0.9rem;
+  }
+
+  .plant-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-tittle {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .card-price {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+  }
+  .card-btn {
+    font-size: 1rem;
+    padding: 15px;
+  }
+}
