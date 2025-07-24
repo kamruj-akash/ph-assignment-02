@@ -34,6 +34,10 @@ body {
   justify-content: space-between;
 }
 
+.justify-centre {
+  justify-content: center;
+}
+
 .item-centre {
   align-items: center;
 }
@@ -268,8 +272,81 @@ header {
   text-decoration: underline;
   margin-top: 15px;
 }
+
+/* news-subscribe css */
+
+.news-subscribe {
+  background-image: url(../assets/news-letter-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+
+.news-overlay {
+  padding: 200px 0;
+}
+
+.news-heading {
+  font-size: 3.125rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.news-overlay input {
+  padding: 8px 20px;
+  width: 644px;
+  font-size: 1rem;
+  font-weight: 400;
+  background: #fff;
+  height: 50px;
+  border: none;
+}
+
+.news-overlay button {
+  background: #e95a08;
+  border: none;
+  width: 185px;
+  height: 50px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* footer css */
+footer {
+  margin: 50px 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 32px;
+  color: #6b7280;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.footer-logo {
+  width: 24%;
+}
+
+.logo-details {
+  font-size: 1.35rem;
+  margin-top: 15px;
+}
+
+.footer-social {
+  width: 15%;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
 /* responsive css */
-/* medium device */
+/* tablet device */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
   header {
@@ -293,7 +370,7 @@ header {
   }
 }
 
-/* medium device */
+/* mobile device */
 
 @media screen and (max-width: 576px) {
   /* nav css */
@@ -374,5 +451,26 @@ header {
   }
   .deal-card a {
     font-size: 1rem;
+  }
+
+  .news-overlay input {
+    width: 250px;
+  }
+  .news-overlay button {
+    width: 100px;
+  }
+
+  .news-heading {
+    font-size: 1.25rem;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .full-width {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
