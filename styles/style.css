@@ -52,7 +52,7 @@ body {
 }
 
 section {
-  margin: 120px 0;
+  margin-bottom: 120px;
 }
 
 header {
@@ -62,7 +62,9 @@ header {
 .text-black {
   color: black;
 }
-
+.text-white {
+  color: #fff;
+}
 .text-black-haf {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -140,7 +142,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 50px;
+  margin: 50px 0 0;
 }
 
 .card {
@@ -172,6 +174,100 @@ header {
   padding: 26px;
 }
 
+/*  seller information section css */
+
+.seller-image {
+  position: relative;
+  width: 45%;
+}
+
+.flower-store {
+  width: 100%;
+}
+
+.badge {
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* transform: translateX(150%) translateY(-50%); */
+}
+.badge {
+}
+.seller-info {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+
+.seller-info-heading {
+  font-size: 3.125rem;
+  font-weight: 600;
+}
+.seller-info-item {
+  margin-left: 25px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+/* latest deal css */
+
+.deal-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-common-css {
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+}
+.small-image-one {
+  grid-area: a;
+}
+.small-image-two {
+  grid-area: b;
+}
+.big-image {
+  grid-area: c;
+}
+.deal-card {
+  margin-top: 80px;
+  gap: 30px;
+  display: grid;
+  grid-template:
+    "a c c"
+    "b c c";
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #0000006e;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloom-ann-tittle {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.zabo-tittle {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.shop_btn {
+  text-decoration: underline;
+  margin-top: 15px;
+}
 /* responsive css */
 /* medium device */
 
@@ -188,6 +284,12 @@ header {
   }
   .banner-tittle {
     font-size: 2.5rem;
+  }
+  .seller-info-heading {
+    font-size: 1.8rem;
+  }
+  .seller-info-item {
+    font-size: 1rem;
   }
 }
 
@@ -242,5 +344,35 @@ header {
   .card-btn {
     font-size: 1rem;
     padding: 15px;
+  }
+
+  .seller-info-section {
+    flex-direction: column;
+  }
+
+  .seller-image {
+    width: 100%;
+  }
+  .seller-info {
+    width: 100%;
+  }
+  .seller-info-heading {
+    font-size: 1.6rem;
+  }
+  .seller-info-item {
+    font-size: 0.9rem;
+  }
+  .deal-card {
+    grid-template:
+      "a a a"
+      "b b b"
+      "c c c";
+  }
+
+  .deal-card h2 {
+    font-size: 1.5rem;
+  }
+  .deal-card a {
+    font-size: 1rem;
   }
 }
